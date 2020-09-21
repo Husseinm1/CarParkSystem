@@ -17,7 +17,7 @@ $('#register').on('click', function(){
 
     if(exists===undefined){
        
-        //user not found
+        //registration not found
         if(password === conpassword){
             
             //register
@@ -51,22 +51,19 @@ $('#register').on('click', function(){
 //login
 $('#login').on('click', function() {
     
-    // const username = $("#user").val();
     const rego = $("#vehicleRego").val();
     const password = $("#password").val();
 
     const register = JSON.parse(localStorage.getItem('register')) || [];
     const exists = register.find(register => register.register === rego);
 
-    // const exists = users.find(user => user.user === username);
-
     if(exists===undefined){
         
-        //name password incorrect
+        //rego password incorrect
         $(document).ready(function(){
             $("#message").append("<p class='alert alert-danger'>User name or Password incorrect!</p>");
         });
-        console.log("User name or Password incorrect!");
+        console.log("registration or Password incorrect!");
 
     }else{
         if(password === exists.password){
