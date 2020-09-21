@@ -6,5 +6,16 @@ const port = 3000;
 const base = `${__dirname}/car`;
 app.listen(port, () => {console.log(`listening on port ${port}`);});
 
-
 app.use(express.static('car'));
+
+app.get('/registration', (req, res) => {
+    res.sendFile(`${base}/registration.html`);
+});
+
+app.get('/login', (req, res) => {
+    res.sendFile(`${base}/login.html`);
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(`${base}/404.html`);
+});
