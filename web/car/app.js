@@ -1,4 +1,4 @@
-$('#navbar').load('navbar.html'); 
+$('#navbar').load('navbar.html');
 
 //register 
 $('#register').on('click', function(){
