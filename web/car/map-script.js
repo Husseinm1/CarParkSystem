@@ -21,7 +21,7 @@ var carparkCoords_north_melb = {
   lng: 144.948869,
   id: 2,
   slots: 19
-};
+};  
 var carparkCoords_south_melb = {
   lat: -37.834565,
   lng: 144.961064,
@@ -317,22 +317,23 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
-function initialize() {
-  panorama = new google.maps.StreetViewPanorama(
-    document.getElementById("street-view"),
-    {
-      position: {
-        lat: 37.86926,
-        lng: -122.254811
-      },
-      pov: {
-        heading: 165,
-        pitch: 0
-      },
-      zoom: 1
-    }
-  );
-}
+// Street View
+// function initialize() {
+//   panorama = new google.maps.StreetViewPanorama(
+//     document.getElementById("street-view"),
+//     {
+//       position: {
+//         lat: 37.86926,
+//         lng: -122.254811
+//       },
+//       pov: {
+//         heading: 165,
+//         pitch: 0
+//       },
+//       zoom: 1
+//     }
+//   );
+// }
 
 function laodMarkers() {
 
@@ -346,7 +347,7 @@ function laodMarkers() {
   });
 
   carparkMarker_docklands.addListener('click', function () {
-    infoWindow.setContent("Car park Docklands");
+    infoWindow.setContent('The Docklands carpark! <br> <a href="">Check more information on parking here!</a>');
     infoWindow.open(map, carparkMarker_docklands);
   });
 
