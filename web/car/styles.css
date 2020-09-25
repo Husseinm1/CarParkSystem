@@ -8,6 +8,7 @@ box-sizing: border-box;
 body{
   font-family: 'Courier New', Courier, monospace;
 }
+
 nav{
   background: #00887f;
   height:80px;
@@ -50,8 +51,8 @@ a.active,a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
   }
 
   .checkbtn{
@@ -127,6 +128,14 @@ a.active,a:hover{
     height: calc(100vh - 80px);
     
   }
+  h1{
+ position: relative;
+ left: 100px;
+ 
+
+
+
+  }
   h2 {
     text-align: center;
     text-decoration-color: green;
@@ -136,7 +145,7 @@ a.active,a:hover{
    h2{
      position: absolute;
      left: 30px;
-     color: grey;
+     color: white;
      font-style: italic;
      line-height: 60px;
    }
@@ -144,4 +153,35 @@ a.active,a:hover{
     background: url("Image/Flat.jpg") no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+  }
+
+  .counter-section
+  {
+    margin:10% auto;
+    color : #fff;
+  }
+  .icon-box
+{
+   border: 1px solid #fff;
+   height: 100px;
+   width: 100px;
+   margin:  20px auto;
+}
+
+  .icon-box .fa
+  {
+    font-size: 40px;
+    margin: 25px;
+    color: #ffc800;
+  }
+
+  .counter-box p
+  {
+    font-size: 20px;
+
+  }
+
+  .counter-box .counter
+  {
+    font-size: 80 px;
   }

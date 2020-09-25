@@ -6,6 +6,8 @@
      <meta name= "viewpoint" content="width=device-width, intial-scale = 1.0">
      <link rel="stylesheet" href="styles.css">
      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
  </head>
   <body>
       <nav>
@@ -18,19 +20,64 @@
           <li> <a class = "active" href="index.html">Home</li>
             <li><a  href="FindParking.html">Find Parking</li>
             <li><a href="ViewParking.html">View Parking</li>
+            <li><a href="Carparklist.html">Carpark List</li>
         </ul>
         
       </nav>
-      
+     <h2>Current Carpark Availability
+    
         
   </body>
  
+  
+ <body>
+  <div class="container counter-section">
+  <div class="row">
+  <div class="col-md-3 counter-box">
+    
+    <div class= "icon-box"><i class="fa fa-car"></i> </div>
+     <p>Current Spaces</p>  
+    <p class="counter">1259</p>
+   <p>Melbourne Central Carpark</p>
+   <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.074247778871!2d144.96132981579328!3d-37.81172984170088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642caf30b05a7%3A0x33a12690cb58b5bb!2sWilson%20Parking%20-%20Melbourne%20Central!5e0!3m2!1sen!2sau!4v1600404468445!5m2!1sen!2sau" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+  </div>
+  <div class="col-md-3 counter-box">
+    
+    <div class= "icon-box"><i class="fa fa-car"></i> </div>
+     <p>Current Spaces</p>  
+    <p class="counter">1689</p>
+   <p>123 Collins Street, Melbourne</p>
+   <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.925659042951!2d144.96789491579324!3d-37.815210241900026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b7d805b3cb%3A0x774d336bdb58ea75!2s123%20Collins%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1600404889687!5m2!1sen!2sau" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+  </div>
+  <div class="col-md-3 counter-box">
+    
+    <div class= "icon-box"><i class="fa fa-car"></i> </div>
+     <p>Current Spaces</p>  
+    <p class="counter">1744</p>
+   <p>300 Flinders Street Car Park, Melbourne</p>
+   <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8032195720702!2d144.96183431579342!3d-37.81807794206413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b382ee0dd1%3A0x30b41583f86e8236!2s300%20Flinders%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1600405085959!5m2!1sen!2sau" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+  </div>
+  
+  
+  <script src="jquery.counterup.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script>
+  jQuery(document).ready(function( $ ) 
+  {
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+  });
+    
+  });
+  
+  </script>
  
-  <h2>
-    View Parking
-  </h2
-  >
+
+ </body>
+ 
+
   <footer>
-    <p style="text-align: center">  &copy; Copyright Blue <script>document.write(new Date().getFullYear())</script></p>
+    <p style="text-align: center">  &copy; Copyright Blue <script> document.write(new Date().getFullYear())</script></p>
   </footer>
 </html>
