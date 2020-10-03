@@ -6,6 +6,19 @@
      <meta name= "viewpoint" content="width=device-width, intial-scale = 1.0">
      <link rel="stylesheet" href="styles.css">
      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script>
+    function Ball(){
+      var temp = document.getElementById("demo").innerHTML = "Occupied";
+      document.getElementById("B").innerHTML = "Booked sucessfully";
+      alert ("Parking has sucessfully been booked");
+      counter = counter-1;
+      alert(counter);
+
+    console.log(temp); 
+    }
+    
+    </script>
+     
      <style>
       table {
         font-family: arial, sans-serif;
@@ -47,6 +60,7 @@
             <li><a  href="FindParking.html">Find Parking</li>
             <li><a href="ViewParking.html">View Parking</li>
             <li><a href="Carparklist.html">Carpark List</li>
+              <li><a href="login.html">Login</li>
         </ul>
         
       </nav>
@@ -75,7 +89,7 @@
       </tr>
       <tr>
         <td>Parking 1 </td>
-        <td>Free</td>
+        <td id="demo" ></td>
         <td><p> <script>document.write(Date())</script> </p></td>
         <td> <label for="cars"></label>
           <select name="cars"id="cars">
@@ -101,7 +115,8 @@
 
         <td>
           <br><br>
-          <input type="button" value="Book Now" style="size: 5cm;"> 
+          <button onclick="Ball()">Book now </button>
+          <p id="B"> </p>
         </td>
 
       </tr>
@@ -134,9 +149,11 @@
         </td>
         <td>
           <br><br>
-          <input type="button" value="Book Now" style="size: 5cm;"> 
+          <button onclick="Ball()">Book now </button>
+          <p id="B"> </p>
         </td>
       </tr>
+
       <tr>
         <td>Parking 3</td>
         <td>Occupied</td>
@@ -166,7 +183,8 @@
         </td>
         <td>
           <br><br>
-          <input type="button" value="Book Now" style="size: 5cm;"> 
+          <button onclick="Ball()">Book now </button>
+          <p id="B"> </p>
         </td>
       </tr>
       <tr>
@@ -198,7 +216,8 @@
         </td>
         <td>
           <br><br>
-          <input type="button" value="Book Now" style="size: 5cm;"> 
+          <button onclick="Ball()">Book now </button>
+          <p id="B"> </p>
         </td>
       </tr>
       <tr>
@@ -228,7 +247,8 @@
         </td>
         <td>
           <br><br>
-          <input type="button" value="Book Now" style="size: 5cm;"> 
+          <button onclick="Ball()">Book now </button>
+          <p id="B"> </p>
         </td>
       </tr>
       <tr>
@@ -258,15 +278,434 @@
         </td>
         <td>
           <br><br>
-          <input type="button" value="Book Now" style="size: 5cm;"> 
+          <button onclick="Ball()">Book now </button>
+          <p id="B"> </p>
         </td>
       </tr>
     </table>
   </body>
+  
+<!-- <body>
+  <table>
+    <tr>
+      <TH COLSPAN="2"><BR><H3>123 Collins Street, Melbourne</H3>
+    </tr>
+    <tr>
+      <th>Parking ID</th>
+      <th>Status</th>
+      <th>Date</th>
+      <th>Time slot From</th>
+      <th>Time Slot To</th>
+      <th>Book</th>
+    </tr>
+    <tr>
+      <td>Parking 1 </td>
+      <td id="demo" ></td>
+      <td><p> <script>document.write(Date())</script> </p></td>
+      <td> <label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="10">10am</option>
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+      </select> </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </td>
+
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+        <p id="B"> </p>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Parking 2</td>
+      <td>Free</td>
+      <td><p> <script>document.write(Date())</script></p></td>
+      <td>
+        <label for="cars"></label>
+        <select name="cars1"id="cars">
+        <option value="11">10am</option>
+        <option value="12">11am</option>
+        <option value="1">12pm</option>
+        <option value="2">1pm</option>
+        <option value="3">2pm</option>
+        <option value="4">3pm</option>
+        <option value="5">4pm</option>
+      </select>
+      </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to1"id="cars to1">
+         <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Parking 3</td>
+      <td>Occupied</td>
+      <td><p> <script>document.write(Date())</script></p></td>
+      <td>
+        <label for="cars"></label>
+        <select name="cars"id="cars">
+       <option value="11">10am</option>
+        <option value="12">11am</option>
+        <option value="1">12pm</option>
+        <option value="2">1pm</option>
+        <option value="3">2pm</option>
+        <option value="4">3pm</option>
+        <option value="5">4pm</option>
+      </select>
+      </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+         <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Parking 4</td>
+      <td>Occupied</td>
+      <td><p> <script>document.write(Date())</script></p></td>
+      <td>
+        <label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">10am</option>
+        <option value="12">11am</option>
+        <option value="1">12pm</option>
+        <option value="2">1pm</option>
+        <option value="3">2pm</option>
+        <option value="4">3pm</option>
+        <option value="5">4pm</option>
+      </select>
+      </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+         <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Parking 5</td>
+      <td>Occupied</td>
+      <td><p><script>document.write(Date())</script></p></td>
+      <td><label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">10am</option>
+        <option value="12">11am</option>
+        <option value="1">12pm</option>
+        <option value="2">1pm</option>
+        <option value="3">2pm</option>
+        <option value="4">3pm</option>
+        <option value="5">4pm</option>
+      </select></td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+         <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Parking 6</td>
+      <td>Occupied</td>
+      <td><p><script>document.write(Date())</script></p></td>
+      <td><label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">10am</option>
+        <option value="12">11am</option>
+        <option value="1">12pm</option>
+        <option value="2">1pm</option>
+        <option value="3">2pm</option>
+        <option value="4">3pm</option>
+        <option value="5">4pm</option>
+      </select></td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+  </table>
+</body> -->
+
+<!-- <body>
+  <table>
+    <tr>
+      <TH COLSPAN="2"><BR><H3>300 Flinders Street Car Park, Melbourne</H3>
+    </tr>
+    <tr>
+      <th>Parking ID</th>
+      <th>Status</th>
+      <th>Date</th>
+      <th>Time slot From</th>
+      <th>Time Slot To</th>
+      <th>Book</th>
+    </tr>
+    <tr>
+      <td>Parking 1 </td>
+      <td id="demo" ></td>
+      <td><p> <script>document.write(Date())</script> </p></td>
+      <td> <label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </select> </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+        <option value="11">6pm</option>
+      </td>
+
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+        <p id="B"> </p>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Parking 2</td>
+      <td>Free</td>
+      <td><p> <script>document.write(Date())</script></p></td>
+      <td>
+        <label for="cars"></label>
+        <select name="cars1"id="cars">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </select>
+      </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to1"id="cars to1">
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+        <option value="11">6pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Parking 3</td>
+      <td>Occupied</td>
+      <td><p> <script>document.write(Date())</script></p></td>
+      <td>
+        <label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </select>
+      </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+        <option value="11">6pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Parking 4</td>
+      <td>Occupied</td>
+      <td><p> <script>document.write(Date())</script></p></td>
+      <td>
+        <label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </select>
+      </td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+        <option value="11">6pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Parking 5</td>
+      <td>Occupied</td>
+      <td><p><script>document.write(Date())</script></p></td>
+      <td><label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </select></td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+        <option value="11">6pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Parking 6</td>
+      <td>Occupied</td>
+      <td><p><script>document.write(Date())</script></p></td>
+      <td><label for="cars"></label>
+        <select name="cars"id="cars">
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+      </select></td>
+      <td>
+        <label for="cars to"></label>
+        <select name="cars to"id="cars to">
+        <option value="12">12pm</option>
+        <option value="1">1pm</option>
+        <option value="2">2pm</option>
+        <option value="3">3pm</option>
+        <option value="4">4pm</option>
+        <option value="5">5pm</option>
+        <option value="11">6pm</option>
+      </td>
+      <td>
+        <br><br>
+        <button onclick="Ball()">Book now </button>
+      </td>
+    </tr>
+  </table>
+</body> -->
+
+
+
+
 
  </h2
  >
   <footer>
     <p style="text-align: center">  &copy; Copyright Blue <script>document.write(new Date().getFullYear())</script></p>
   </footer>
+
+  
 </html>
