@@ -60,6 +60,7 @@
             <li><a  href="FindParking.html">Find Parking</li>
             <li><a href="ViewParking.html">View Parking</li>
             <li><a href="Carparklist.html">Carpark List</li>
+              <li><a href="map.html"> Map </a></li>
               <li><a href="login.html">Login</li>
         </ul>
         
@@ -72,8 +73,12 @@
   <h2>
     Find Parking
     
+    
   <body>
-      
+     
+    <body>
+      <img src="Image/Parking.png" alt="Parking" width="142" height="142" style="position:absolute; TOP:250px; right:-160px; WIDTH:250px; HEIGHT:250px">
+    </body>
    
     <table>
       <tr>
@@ -89,7 +94,7 @@
       </tr>
       <tr>
         <td>Parking 1 </td>
-        <td id="demo" ></td>
+        <td><p>Occupied</p></td>
         <td><p> <script>document.write(Date())</script> </p></td>
         <td> <label for="cars"></label>
           <select name="cars"id="cars">
@@ -116,13 +121,13 @@
         <td>
           <br><br>
           <button onclick="Ball()">Book now </button>
-          <p id="B"> </p>
+          <p id="A"> </p>
         </td>
 
       </tr>
       <tr>
         <td>Parking 2</td>
-        <td>Free</td>
+        <td><p id="demo">Free</p></td>
         <td><p> <script>document.write(Date())</script></p></td>
         <td>
           <label for="cars"></label>
@@ -283,7 +288,11 @@
         </td>
       </tr>
     </table>
+    
+    
   </body>
+
+  
   
 <!-- <body>
   <table>
